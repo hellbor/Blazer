@@ -3,10 +3,10 @@
 
 <h3>Factorial</h3>
 
-< type="number" name="factorial" min="0" max="20" @bint="n" @bind:event="onchange" @onclick="Calculate"/>
+<input type="number" name="factorial" min="0" max="20" @bind="n" @onclick="Calculate"/>
 <label for="factorial" style="font-size:24px;">! = @factorial</label>
 
-@code 
+@* @code 
 {
 	long factorial{ get; set; } = 1;
 	void Calculate()
@@ -17,4 +17,4 @@
 			factorial *= i;
 		}
 	}
-}
+} *@
