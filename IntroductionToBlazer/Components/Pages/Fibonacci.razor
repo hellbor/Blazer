@@ -1,0 +1,55 @@
+﻿@page "/fibonacci"
+@rendermode InteractiveServer
+
+<h3>Fibonacci</h3>
+
+<input type="number" @bind="n" min="0"/>
+<button @onclick="Calculate">=</button>
+
+@if (list != null && list.Count > 0)
+{
+	<div>
+	<h2>
+		@string.Join(",",list)
+	</h2>
+	</div>
+}
+
+@code
+{
+	int n = 0;
+	long result;
+	List<long> list = new List<long>();
+
+	void Calculate()
+	{
+		(result, list) = Fib(n);
+	}
+	(long result, List<long>list) Fib(int n)
+	{
+		List<long> listFibonacci = new List<long>();
+		if (n <= 1)
+		{
+			for (int i = 0; i <= n; i++)
+			{
+				listFibonacci.Add(i);
+			}
+			return (n, listFibonacci);
+		}
+		long a = 0;
+		long b = 1;
+		long result;
+
+		listFibonacci.Add(a);
+		listFibonacci.Add(b);
+		for (int i = 2; i <= n; i++)
+		{
+			result = a + b;
+			a = b;
+			b = result;
+			listFibonacci.Add(b);
+		}
+		return (b, listFibonacci);
+	}
+}
+

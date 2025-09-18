@@ -5,7 +5,7 @@ VisualStudioVersion = 17.8.34511.84
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IntroductionToBlazer", "IntroductionToBlazer\IntroductionToBlazer.csproj", "{D7521EAF-D78D-4182-8FBE-2DCF14E96F98}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TODOlist", "TODOlist\TODOlist.csproj", "{A9C2AC7C-F8E9-40CC-923A-85A29EAFD118}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TODOlist", "TODOlist\TODOlist.csproj", "{A9C2AC7C-F8E9-40CC-923A-85A29EAFD118}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
