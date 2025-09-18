@@ -10,6 +10,7 @@
 <input type="text" placeholder="Новая задача" @bind="task" />
 <button @onclick="AddTask">Добавить</button>
 <span class="complete-style">Complete task</span>
+
 <ul>
 	@foreach (TODOitem i in tasks)
 	{

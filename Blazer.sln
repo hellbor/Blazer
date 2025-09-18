@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IntroductionToBlazer", "Int
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TODOlist", "TODOlist\TODOlist.csproj", "{A9C2AC7C-F8E9-40CC-923A-85A29EAFD118}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Movies", "Movies\Movies.csproj", "{2EABB962-40B8-4A24-A49F-56DDA7921CDD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{A9C2AC7C-F8E9-40CC-923A-85A29EAFD118}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A9C2AC7C-F8E9-40CC-923A-85A29EAFD118}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A9C2AC7C-F8E9-40CC-923A-85A29EAFD118}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EABB962-40B8-4A24-A49F-56DDA7921CDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EABB962-40B8-4A24-A49F-56DDA7921CDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EABB962-40B8-4A24-A49F-56DDA7921CDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EABB962-40B8-4A24-A49F-56DDA7921CDD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
