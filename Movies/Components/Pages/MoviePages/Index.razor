@@ -13,8 +13,8 @@
 
 <div style="display:flex;justify-content:space-between">
     <form action="/movies" data-enhance data-permanent>
-    <input type="search" name="titleFilter" /> 
-    <input type="submit" value="Search" />
+        <input type="search" name="titleFilter" />
+        <input type="submit" value="Search" />
     </form>
 
     <div>
@@ -43,7 +43,7 @@
         <a href="@($"movies/delete?id={movie.Id}")">Delete</a>
     </TemplateColumn>
 </QuickGrid>
-    <Paginator State="pagination" />
+<Paginator State="pagination" />
 
 @code {
     private MoviesContext context = default!;
