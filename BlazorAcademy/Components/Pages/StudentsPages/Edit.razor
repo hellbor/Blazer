@@ -52,11 +52,11 @@ else
                     <InputText id="phone" @bind="Students.phone" class="form-control" aria-required="true"/>
                     <ValidationMessage For="() => Students.phone" class="text-danger" />
                 </div>
-                <div class="mb-3">
+                @* <div class="mb-3">
                     <label for="photo" class="form-label">photo:</label>
                     <InputText id="photo" @bind="Students.photo" class="form-control" aria-required="true"/>
                     <ValidationMessage For="() => Students.photo" class="text-danger" />
-                </div>
+                </div> *@
                 <div class="mb-3">
                     <label for="group" class="form-label">group:</label>
                     <InputNumber id="group" @bind-Value="Students.group" class="form-control" aria-required="true"/>

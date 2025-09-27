@@ -5,6 +5,7 @@
 @using BlazorAcademy.Data
 @implements IAsyncDisposable
 @inject IDbContextFactory<BlazorAcademy.Data.BlazorAcademyContext> DbFactory
+@rendermode InteractiveServer
 
 <PageTitle>Index</PageTitle>
 
@@ -15,14 +16,14 @@
 </p>
 
 <QuickGrid Class="table" Items="context.Students">
-    <PropertyColumn Property="students => students.last_name" />
-    <PropertyColumn Property="students => students.first_name" />
-    <PropertyColumn Property="students => students.middle_name" />
-    <PropertyColumn Property="students => students.birth_date" />
-    <PropertyColumn Property="students => students.email" />
-    <PropertyColumn Property="students => students.phone" />
+    <PropertyColumn Sortable="true" Title="Фамилия" Property="students => students.last_name" />
+    <PropertyColumn Sortable="true" Title="Имя" Property="students => students.first_name" />
+    <PropertyColumn Sortable="true" Title="Отчество" Property="students => students.middle_name" />
+    <PropertyColumn Sortable="true" Format="yyyy.MM.dd" Title="Дата рождения" Property="students => students.birth_date" />
+    <PropertyColumn Sortable="true" Title="E-mail" Property="students => students.email" />
+    <PropertyColumn Sortable="true" Title="Телефон" Property="students => students.phone" />
+    <PropertyColumn Sortable="true" Title="Группа" Property="students => students.group" />
     @* <PropertyColumn Property="students => students.photo" /> *@
-    <PropertyColumn Property="students => students.group" />
 
     <TemplateColumn Context="students">
         <a href="@($"students/edit?stud_id={students.stud_id}")">Edit</a> |

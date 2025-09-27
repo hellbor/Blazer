@@ -9,6 +9,6 @@ namespace BlazorAcademy.Models
 		[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
 		public byte direction_id { get; set; }
 		[Required]
-		public string direction_name { get; set; }
+		public string? direction_name { get; set; }
 	}
 }
